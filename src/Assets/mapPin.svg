@@ -1,0 +1,6 @@
+<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="map-pin">
+<path id="Vector" d="M25 11.666C25 19.8327 14.5 26.8327 14.5 26.8327C14.5 26.8327 4 19.8327 4 11.666C4 8.88124 5.10625 6.21053 7.07538 4.24139C9.04451 2.27226 11.7152 1.16602 14.5 1.16602C17.2848 1.16602 19.9555 2.27226 21.9246 4.24139C23.8938 6.21053 25 8.88124 25 11.666Z" stroke="#008FBE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M14.5 15.166C16.433 15.166 18 13.599 18 11.666C18 9.73302 16.433 8.16602 14.5 8.16602C12.567 8.16602 11 9.73302 11 11.666C11 13.599 12.567 15.166 14.5 15.166Z" stroke="#008FBE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

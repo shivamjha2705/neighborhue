@@ -1,0 +1,44 @@
+.betaReviewsConatiner {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.betaReviewsHeading {
+    margin: 3% 0;
+    text-align: center;
+    font-size: 3vw;
+    position: relative;
+
+    >img {
+        position: absolute;
+        top: 68%;
+        left: 37%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-device-width : 500px) {
+
+    .betaReviewsConatiner {
+        margin-top: 16vw;
+        overflow: hidden;
+    }
+
+    .betaReviewsHeading {
+        width: 73.333vw;
+        /* font-family: Poppins; */
+        font-size: 6.933vw;
+        font-weight: 600;
+        line-height: 10.4vw;
+        margin: 0 auto;
+
+        >img {
+            position: absolute;
+            width: 36.267vw;
+            top: 33%;
+            left: 46%;
+            z-index: -1;
+        }
+    }
+}

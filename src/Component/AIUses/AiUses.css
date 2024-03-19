@@ -1,0 +1,215 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.AiUsesContainer {
+    padding: 4% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+
+    >a >button {
+        margin-top: 8vmin;
+        font-size: 1.2vw;
+
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.9);
+        background-color: #051052;
+        padding: 1vw;
+        border: none;
+        gap: 1vw;
+        cursor: pointer;
+    }
+}
+
+.AiUsesHeading {
+    font-size: 2.8vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.blueBg {
+    background-image: url('../../Assets/blueBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.AiCardConatiner {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 2%; */
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.AiCard {
+    margin: 2% 0;
+    display: flex;
+    padding: 3vh 2vh;
+    border: 1px solid rgba(118, 115, 115, 0.8);
+    border-radius: 2.667vw;
+    width: 32%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2vh;
+    height: initial;
+    padding: 2vw;
+}
+
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15%;
+    /* padding-right: 5%; */
+}
+
+.AiCardImg {
+    height: auto;
+    max-width: 50%;
+}
+
+.upcoming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003B84;
+    font-size: 1vw;
+    height: 1.6em;
+    font-weight: 600;
+    gap: 5%;
+}
+
+.cardHeading {
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+.cardDetails {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.766);
+    line-height: 1.6vw;
+
+}
+
+
+
+@media screen and (max-device-width:500px) {
+
+    .AiUsesContainer {
+        padding: 0;
+        margin: 16vw 4.267vw;
+        gap: 12.8vw;
+
+        >a >button {
+
+            margin-top: 8.533vw;
+            color: rgba(255, 255, 255);
+            padding: 3.2vw;
+            gap: 2.133vw;
+
+            /* font-family: Inter; */
+            font-size: 3.733vw;
+            font-weight: 600;
+            line-height: 5.6vw;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+    }
+
+    .AiUsesHeading {
+        width: 80vw;
+        /* font-family: Inter; */
+        font-size: 6.933vw;
+        font-weight: 600;
+        line-height: 10.4vw;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    .blueBg {
+        background-image: url('../../Assets/blueBg.png');
+        background-size: contain;
+    }
+
+    .AiCardConatiner {
+        flex-direction: column;
+        justify-content: unset;
+        gap: 4.267vw;
+        flex-wrap: unset;
+        height: unset;
+    }
+
+    .AiCard {
+        margin: 0;
+        padding: 5.333vw;
+
+        justify-content: unset;
+        gap: 0;
+
+        border: 0.267vw solid #11111133;
+        border-radius: 2.133vw;
+
+        height: initial;
+
+        width: 100%;
+    }
+
+    .cardTop {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: unset;
+        margin-bottom: 0;
+        /* padding-right: 5%; */
+    }
+
+    .AiCardImg {
+        max-height: 26.667vw;
+        width: auto;
+    }
+
+    .upcoming {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #003B84;
+        gap: 1.067vw;
+
+        /* font-family: Inter; */
+        font-size: 3.733vw;
+        font-weight: 600;
+        line-height: 5.6vw;
+
+        >img {
+            height: 5.333vw;
+            width: 5.333vw;
+        }
+    }
+
+    .cardHeading {
+        margin-top: 16vw;
+        /* font-family: Inter; */
+        font-size: 5.333vw;
+        font-weight: 600;
+        line-height: 8vw;
+    }
+
+    .cardDetails {
+        margin-top: 2.133vw;
+        color: #4F4F4F;
+        /* font-family: Poppins; */
+        font-size: 3.733vw;
+        font-weight: 500;
+        line-height: 5.6vw;
+    }
+
+}

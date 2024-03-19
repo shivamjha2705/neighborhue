@@ -1,0 +1,478 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.registerContainer {
+  padding: 5% 5% 0% 5%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.registerFormContainer {
+  padding: 5% 0;
+  width: 30vw;
+  /* height: 601px; */
+  top: 9.182vw;
+  left: 4.851vw;
+  gap: 1.94vw;
+  min-width: 230px;
+}
+
+.registerHeader {
+  > h1 {
+    /* //styleName: Headline/H2; */
+    /* font-family: Poppins; */
+    font-size: 2.772vw;
+    font-weight: 600;
+    line-height: 4.158vw;
+    /* letter-spacing: 0em; */
+    /* text-align: center; */
+    color: #051052;
+  }
+
+  > p {
+    /* font-family: Inter; */
+    font-size: 1.109vw;
+    font-weight: 500;
+    line-height: 4.663vw;
+    /* letter-spacing: 0em; */
+    /* text-align: center; */
+    color: #797585;
+  }
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.94vw;
+  margin: 5% 0;
+  position: relative;
+
+  > button {
+    width: 100%;
+    height: 3.881vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.277vw;
+    background-color: white;
+    border-radius: 0.554vw;
+    border: #d4d1db 1px solid;
+
+    /* font-family: Inter; */
+    font-size: 1.109vw;
+    font-weight: 500;
+    line-height: 1.663vw;
+    /* letter-spacing: 0em;
+        text-align: center; */
+
+    > img {
+      width: 1.663vw;
+      height: 1.663vw;
+    }
+  }
+}
+
+ul.list_style {
+  list-style-type: "👉 ";
+  padding-left: 20px;
+  margin-top: 40px;
+}
+ul.list_style li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.or {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 33px;
+
+  > hr {
+    width: 45%;
+  }
+
+  > p {
+    display: inline;
+
+    color: #8e8e8e;
+
+    font-family: Inter;
+
+    font-size: 1.109vw;
+    font-weight: 500;
+    line-height: 1.663vw;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+.register {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.94vw;
+
+  > button {
+    background-color: #0cc0df;
+    color: #051052;
+    border-radius: 0.277vw;
+    padding: 0.832vw 2.772vw;
+    height: 3.326vw;
+
+    /* font-family: Inter; */
+    font-size: 1.386vw;
+    font-weight: 500;
+    line-height: 1.663vw;
+    /* letter-spacing: 0em; */
+    text-align: center;
+    border: none;
+  }
+}
+
+.registerInputContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  /* height: ; */
+  > img {
+    position: absolute;
+    height: 1.663vw;
+    width: 1.663vw;
+  }
+
+  > input {
+    width: 100%;
+    padding: 1.109vw 0px 1.109vw 3.049vw;
+    /* font-family: Inter; */
+    font-size: 1.109vw;
+    font-weight: 500;
+    line-height: 1.663vw;
+    border-radius: 0.277vw;
+    border: 1px solid #797585;
+    /* color: #797585; */
+    /* letter-spacing: 0em;
+        text-align: center; */
+  }
+
+  > input::placeholder {
+    color: #797585;
+    opacity: 1;
+  }
+}
+
+.lIcon {
+  left: 3%;
+}
+
+.key {
+  left: 90%;
+
+  cursor: pointer;
+}
+
+.forgetPassword {
+  /* font-family: Poppins; */
+  width: 100%;
+  font-size: 0.97vw;
+  font-weight: 500;
+  line-height: 1.455vw;
+  letter-spacing: 0em;
+  text-align: right;
+  text-decoration: underline;
+  color: #008fbe;
+}
+
+#signinBtn {
+  background-color: #051052;
+  color: white;
+}
+
+.switch {
+  /* font-family: Inter; */
+  font-size: 1.109vw;
+  font-weight: 500;
+  line-height: 1.663vw;
+  /* letter-spacing: 0em; */
+  text-align: center;
+  color: #ada9bb;
+
+  > Link {
+    font-size: 1.109vw;
+    font-weight: 500;
+    line-height: 1.663vw;
+    color: #003b84;
+  }
+
+  > a:visited {
+    color: #003b84;
+  }
+}
+
+.registerImg {
+  width: 50%;
+  position: relative;
+
+  > img {
+    width: 100%;
+    border-radius: 1.04vw;
+  }
+}
+
+.imgText {
+  width: 22.176vw;
+  position: absolute;
+  left: 5%;
+  top: 2%;
+
+  > h4 {
+    /* font-family: Inter; */
+    font-size: 3.881vw;
+    font-weight: 600;
+    line-height: 5.821vw;
+    color: white;
+    /* text-align: center; */
+  }
+
+  > p {
+    /* font-family: Inter; */
+    font-size: 1.386vw;
+    font-weight: 500;
+    line-height: 2.079vw;
+    color: white;
+    text-align: left;
+  }
+}
+
+@media screen and (max-device-width: 500px) {
+  .registerContainer {
+    padding: 0% 4.267vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .registerFormContainer {
+    padding-top: 16vw;
+    padding-bottom: 8.533vw;
+    width: 100%;
+    top: 0;
+    left: 0;
+    gap: 7.467vw;
+    min-width: 61.333vw;
+  }
+
+  .registerHeader {
+    > h1 {
+      color: #051052;
+      /* font-family: Poppins; */
+      font-size: 10.133vw;
+      font-weight: 600;
+      line-height: calc(14.933vw + 4px);
+      text-align: center;
+    }
+
+    > p {
+      /* font-family: Inter; */
+      font-size: 4vw;
+      font-weight: 500;
+      line-height: calc(5.333vw+4px);
+      text-align: center;
+      color: #797585;
+    }
+  }
+
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 5% 0;
+    position: relative;
+
+    > button {
+      width: 100%;
+      height: 14.933vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.067vw;
+      background-color: white;
+      border-radius: 2.133vw;
+      border: #d4d1db 1px solid;
+
+      /* font-family: Inter; */
+      font-size: 4.267vw;
+      font-weight: 600;
+      line-height: calc(5.333vw+4px);
+      text-align: center;
+
+      > img {
+        width: 6.4vw;
+        height: 6.4vw;
+      }
+    }
+  }
+
+  .or {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10.667vw;
+
+    > hr {
+      width: 45%;
+    }
+
+    > p {
+      /* display: inline; */
+      color: #8e8e8e;
+      /* font-family: Inter; */
+      font-size: 4.267vw;
+      font-weight: 500;
+      line-height: calc(5.333vw+4px);
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+
+  .register {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+
+    > button {
+      background-color: #0cc0df;
+      color: #051052;
+      border-radius: 1.067vw;
+      padding: 0.832vw 2.772vw;
+      height: 12.8vw;
+
+      /* font-family: Inter; */
+      font-size: 4.267vw;
+      font-weight: 600;
+      line-height: calc(5.333vw+4px);
+      text-align: center;
+      border: none;
+
+      margin: 6.4vw 0;
+    }
+  }
+
+  #signInForm {
+    margin-top: 4.267vw;
+    gap: 7.467vw;
+  }
+
+  .registerInputContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    height: 14.933vw;
+
+    > img {
+      position: absolute;
+      height: 6.4vw;
+      width: 6.4vw;
+    }
+
+    > input {
+      width: 100%;
+      height: 100%;
+      padding: 4.267vw 9.333vw 4.267vw 11.733vw;
+      border-radius: 1.067vw;
+      border: 1px solid #797585;
+
+      /* font-family: Inter; */
+      font-size: 4.267vw;
+      font-weight: 500;
+      line-height: calc(5.333vw+4px);
+      text-align: left;
+    }
+
+    > input::placeholder {
+      color: #797585;
+      opacity: 1;
+    }
+  }
+
+  #forgotPasswordContainer {
+    height: 5.6vw;
+  }
+
+  #forgotPassword {
+    /* font-family: Poppins; */
+    font-size: 3.733vw;
+    font-weight: 500;
+    line-height: calc(4.533vw + 4px);
+  }
+
+  #signinBtn {
+    margin-top: 0px;
+  }
+
+  #registerInputEmail {
+    margin: 4.267vw 0;
+  }
+
+  .switch {
+    text-align: center;
+    color: #ada9bb;
+
+    /* font-family: Poppins; */
+    font-size: 3.733vw;
+    font-weight: 500;
+    line-height: calc(4.533vw + 4px);
+    letter-spacing: 0em;
+
+    > Link {
+      color: #003b84;
+    }
+
+    > a:visited {
+      color: #003b84;
+    }
+  }
+
+  .registerImg {
+    display: none;
+  }
+}
+
+/* Add your class name to the div */
+/* .googleButton {
+    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  } */
+
+/* Style the image inside the div */
+/* .googleButton img {
+    
+    width: 210px; Adjust the width as per your design
+    height: 70px; Adjust the height as per your design
+    margin-right: 0px; Adjust the margin as per your design
+  } */
+
+/* Add hover effect to the button */
+/* .googleButton:hover {
+    background-color: #d6d6d6;
+  } */

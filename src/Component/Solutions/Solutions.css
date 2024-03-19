@@ -1,0 +1,161 @@
+/* *{
+    border: 1px solid red;
+} */
+
+.solutionsContainer {
+    margin-top: 5%;
+    /* min-height: 100vh; */
+
+    background-color: #F8F5FF;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.solutionIntro {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+}
+
+.boldSolutionIntro {
+    flex-grow: 1;
+    width: 100%;
+
+    /* font-family: Inter; */
+    font-size: 2.772vw;
+    font-weight: 600;
+    line-height: 4.158vw;
+
+}
+
+.boldSolutionIntroBg {
+    background-color: #ffc1b0;
+}
+
+.lightSolutionIntro {
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 100%;
+    width: fit-content;
+    padding-left: 5%;
+
+    /* font-family: Inter; */
+    font-size: 1.109vw;
+    font-weight: 500;
+    /* line-height: 1.663vw; */
+    line-height: calc(1.455vwvw + 3px);
+}
+
+.solutionItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+}
+
+.solution{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.solutionImage {
+    width: 100%;
+    height: auto;
+}
+
+.alignCenter {
+    text-align: center;
+    padding-top: 5%;
+    color: #333333;
+
+    max-width: 20.347vw;
+
+    /* font-family: Inter; */
+    font-size: 1.386vw;
+    font-weight: 600;
+    line-height: 2.079vw;
+    text-align: center;
+
+}
+
+#lightSolutionMobile {
+    display: none;
+}
+
+
+
+@media screen and (max-device-width: 500px) {
+    .solutionsContainer {
+        margin-top: 0;
+        flex-direction: column;
+        padding: 6.4vw 4.267vw;
+    }
+
+    .solutionIntro {
+        display: flex;
+        gap: 3.2vw;
+        align-items: center;
+        justify-content: unset;
+        flex-direction: column;
+        margin-bottom: unset;
+    }
+
+    .boldSolutionIntro {
+        flex-grow: unset;
+
+        /* font-family: Poppins; */
+        font-size: 6.933vw;
+        font-weight: 600;
+        line-height: 10.4vw;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    #lightSolutionMobile {
+        display: block;
+        color: #4F4F4F;
+        /* font-family: Inter; */
+        font-size: 3.733vw;
+        font-weight: 500;
+        line-height: 5.6vw;
+        text-align: center;
+    }
+
+    .lightSolutionIntro {
+        display: none;
+    }
+
+    .solutionItems {
+        margin-top: 10.667vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8.533vw;
+    }
+
+    .solutionImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .alignCenter {
+        padding: 0;
+        color: #333333;
+        height: unset;
+        top: unset;
+        left: unset;
+        width: 100%;
+        max-width: unset;
+
+        /* font-family: Inter; */
+        font-size: 4.267vw;
+        font-weight: 600;
+        line-height: 6.4vw;
+        text-align: center;
+
+    }
+    
+}

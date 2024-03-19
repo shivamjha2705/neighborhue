@@ -1,0 +1,54 @@
+/* Checkout.css */
+
+/* Styles for the checkout page */
+
+/* Styles for the payment form */
+/* .PaymentForm {
+    margin-top: 20px;
+  } */
+
+/* .PaymentForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .PaymentForm button:hover {
+    background-color: #45a049;
+  } */
+
+.purchaseBtn {
+  width: 100%;
+  padding: 3% 30%;
+  border: none;
+  font-size: 1.4vw;
+  font-weight: 500;
+  border-radius: 1.386vw;
+  background-image: linear-gradient(to right, #008fbe, #0357f8);
+  color: white;
+}
+
+.PaymentError {
+  color: red;
+  margin-top: 10px;
+}
+
+@media screen and (max-device-width: 500px) {
+  .purchaseBtn {
+    width: 100%;
+    padding: 3.733vw 8vw;
+    border: none;
+    border-radius: 3.2vw;
+    background-image: linear-gradient(to right, #008fbe, #0357f8);
+    color: white;
+    margin-top: 4.8vw;
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.4vw;
+  }
+}

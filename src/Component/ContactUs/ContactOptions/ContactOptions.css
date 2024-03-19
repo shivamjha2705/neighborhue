@@ -1,0 +1,178 @@
+/* *{
+    border: 1px solid red;
+} */
+.contactOptionsContainer {
+  padding: 5%;
+}
+
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+
+  > h1 {
+    /* font-family: Poppins; */
+    font-size: 3.881vw;
+    font-weight: 600;
+    line-height: 5.821vw;
+    color: #111111;
+  }
+
+  > p {
+    /* font-family: Poppins; */
+    font-size: 1.802vw;
+    font-weight: 500;
+    line-height: 2.703vw;
+    color: #666666;
+  }
+}
+
+.contactHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contactCard {
+  border-radius: 0.554vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1%;
+  width: 20.79vw;
+  height: 19.82vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.iconHolder {
+  height: 25%;
+}
+.iconHolder i{
+  color: #7e49ec;
+  border: 2px solid #C5AFEA;
+  border-radius: 8px;
+  padding: 25px 10px; 
+}
+
+.icon {
+  padding: 0.693vw;
+  border: 2px #7c48d070 solid;
+  /* background-color: #9462f991; */
+  border-radius: 0.554vw;
+  color: #ffff;
+  width: 3.465vw;
+  mix-blend-mode: overlay;
+}
+
+.contactCardHeading {
+  /* font-family: Poppins; */
+  font-size: 1.386vw;
+  font-weight: 600;
+  line-height: 2.079vw;
+  text-align: center;
+}
+
+.contactCardInfo {
+  /* font-family: Poppins; */
+  font-size: 1.109vw;
+  font-weight: 500;
+  line-height: 1.802vw;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+.contactLink {
+  /* font-family: Poppins; */
+  font-size: 1.109vw;
+  font-weight: 600;
+  line-height: 1.802vw;
+  color: #5418cf;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (max-device-width: 500px) {
+  .contactOptionsContainer {
+    padding: 16vw 4.267vw;
+  }
+
+  .contactHeader {
+    width: 85.923vw;
+    /* height: 112px; */
+    gap: 2.133vw;
+
+    padding: 0 2.667vw;
+    margin-bottom: 10.667vw;
+
+    > h1 {
+      /* font-family: Poppins; */
+      font-size: 6.933vw;
+      font-weight: 600;
+      line-height: 10.4vw;
+      /* letter-spacing: 0em; */
+      text-align: center;
+    }
+
+    > p {
+      /* font-family: Poppins; */
+      font-size: 4.267vw;
+      font-weight: 500;
+      line-height: 6.933vw;
+      text-align: center;
+    }
+  }
+
+  .contactHolder {
+    flex-direction: column;
+    gap: 6.4vw;
+  }
+
+  .contactCard {
+    width: 91.467vw;
+    height: fit-content;
+    padding: 6.4vw 16vw;
+    justify-content: unset;
+    border-radius: 2.133vw;
+  }
+
+  .iconHolder {
+    height: 12.8vw;
+    margin-bottom: 16vw;
+
+    > img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .contactCardHeading {
+    /* font-family: Poppins; */
+    font-size: 5.333vw;
+    font-weight: 600;
+    line-height: 8vw;
+    text-align: center;
+    margin-bottom: 2.133vw;
+  }
+
+  .contactCardInfo {
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.933vw;
+    text-align: center;
+    margin-bottom: 5.333vw;
+  }
+
+  .contactLink {
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 600;
+    line-height: 6.933vw;
+    text-align: center;
+  }
+}

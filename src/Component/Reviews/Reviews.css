@@ -1,0 +1,163 @@
+/* *{
+    border: 1px solid red;
+} */
+
+.reviewerConatainer {
+    margin: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewerHeading {
+    text-align: center;
+    margin: 1% 0;
+
+    /* font-family: Inter; */
+    font-size: 2.772vw;
+    font-weight: 600;
+    line-height: 2.772vw;
+
+}
+
+.reviewerSubHeading {
+    text-align: center;
+    /* font-family: Poppins; */
+    color: #000000AB;
+    font-size: 1.386vw;
+    font-weight: 400;
+    line-height: 2.079vw;
+
+}
+
+.reviewerMain {
+    display: flex;
+    margin: 5% 0;
+    justify-content: space-between;
+    gap: 4.297vw;
+}
+
+.reviewerLeftItem {
+    width: 50%;
+    /* margin-right: 2%; */
+}
+
+.review {
+    text-align: justify;
+    /* margin-bottom: 10%; */
+
+    /* font-family: Poppins; */
+    font-size: 1.386vw;
+    font-weight: 500;
+    line-height: 2.079vw;
+}
+
+
+.reviewer {
+    color: #051052;
+    margin-top: 4%;
+    margin-bottom: 1%;
+
+    /* font-family: Poppins; */
+    font-size: 1.802vw;
+    font-weight: 600;
+    line-height: 2.703vw;
+    text-align: left;
+}
+
+
+
+.star {
+    margin-right: 1%;
+    width: 1.944vw;
+}
+
+.reviewerRightItem {
+    /* margin-left: 2%; */
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto auto;
+
+    >img {
+
+        width: 10.534vw;
+        height: 10.534vw;
+    }
+}
+.rating{
+    margin-bottom: 7%;
+}
+
+@media screen and (max-device-width:500px) {
+    .reviewerConatainer {
+        margin: 16vw 9.6vw 26.667vw 9.6vw;
+    }
+
+    .reviewerHeading {
+        margin: 0;
+
+        /* font-family: Inter; */
+        font-size: 5.333vw;
+        font-weight: 600;
+        line-height: 8vw;
+        text-align: center;
+    }
+
+    .reviewerSubHeading {
+        color: #000000AB;
+        /* font-family: Poppins; */
+        font-size: 3.2vw;
+        font-weight: 400;
+        line-height: 4.8vw;
+        text-align: center;
+        margin-top: 1.067vw;
+    }
+
+    .reviewerMain {
+        display: flex;
+        margin-top: 7.467vw;
+        justify-content: space-between;
+        gap: 4.297vw;
+    }
+
+    .reviewerLeftItem {
+        width: 100%;
+    }
+
+    .review {
+        /* font-family: Inter; */
+        font-size: 3.2vw;
+        font-weight: 500;
+        line-height: 4.8vw;
+        text-align: center;
+    }
+
+
+    .reviewer {
+        margin-top: 2.133vw;
+        margin-bottom: 1.067vw;
+
+        /* font-family: Poppins; */
+        font-size: 4.267vw;
+        font-weight: 600;
+        line-height: 6.4vw;
+        text-align: center;
+    }
+
+    .rating{
+        display: flex;
+        gap: 2.133vw;
+        justify-content: center;
+    }
+
+    .star {
+        margin-right: 1%;
+        height: 5.333vw;
+        width: 5.333vw;
+    }
+
+    .reviewerRightItem {
+        display: none;
+    }
+}

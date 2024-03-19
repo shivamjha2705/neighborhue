@@ -1,0 +1,296 @@
+.introContainer {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.robot {
+  width: 43vw;
+}
+
+.introArea {
+  display: flex;
+  flex-direction: column;
+  width: 43vw;
+}
+
+.introText > p {
+  font-weight: 600;
+  font-size: 3.6vw;
+  line-height: 5.5vw;
+
+  > img {
+    width: 6.93vw;
+  }
+}
+
+.neo {
+  color: #d44117;
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+.introActions {
+  display: flex;
+}
+
+.arrow {
+  padding-right: 2vw;
+  height: 10vw;
+  padding-top: 3vh;
+  position: relative;
+}
+
+.arrowM {
+  display: none;
+}
+
+.introText2 {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.lightText {
+  color: #797585;
+  font-weight: 600;
+  font-size: 1.5vw;
+  line-height: 2.6vw;
+}
+
+.introActionContainer {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+
+  > a {
+    margin-right: 5%;
+    width: 100%;
+  }
+  > .introActions > button {
+    background: linear-gradient(
+      90deg,
+      rgba(212, 65, 23, 0.7988445378151261) 24%,
+      rgba(84, 24, 207, 0.8016456582633054) 100%
+    );
+    border: none;
+    border-radius: 7px;
+    padding: 12px 18px;
+    color: #ffff;
+    font-size: clamp(12px, 2vw, 18px);
+    width: 100%;
+  }
+  > button {
+    background: transparent;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    padding: 12px;
+    color: #5418cf;
+    font-size: clamp(12px, 2vw, 18px);
+    width: 100%;
+  }
+}
+
+.introActionImg {
+  width: 10vw;
+}
+
+.socialMedia {
+  margin-top: 10%;
+  display: flex;
+  gap: 10%;
+}
+
+.peopleContainer {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.833vw;
+  border-radius: 0.833vw;
+  background-color: #eceefe;
+
+  > img {
+    width: 10vw;
+    height: 3.333vw;
+  }
+}
+
+.peopleContainer,
+.socialMediaContainer {
+  padding: 0.833vw 1.667vw;
+  justify-content: space-around;
+
+  > p {
+    font-size: 1.111vw;
+    font-weight: 500;
+    line-height: 1.667vw;
+    text-align: center;
+    color: #131313;
+  }
+}
+
+.socialMediaContainer {
+  background-color: #eceefe;
+  border-radius: 0.832vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: unset;
+  gap: 2.083vw;
+}
+
+#socialMediaLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.111vw;
+
+  > img {
+    width: 1.667vw;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-device-width: 500px) {
+  .introContainer {
+    padding: 0;
+    gap: 4.267vw;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 7.467vw;
+    padding: 0 5.867vw;
+  }
+
+  .robot {
+    width: 69.333vw;
+  }
+
+  .introArea {
+    align-items: center;
+    width: 100%;
+  }
+
+  .introText > p {
+    font-size: 6.933vw;
+    font-weight: 600;
+    line-height: 10.4vw;
+    text-align: center;
+
+    > img {
+      width: 12.267vw;
+    }
+  }
+
+  .neo {
+    display: none;
+  }
+
+  .introActions {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  .arrow {
+    display: none;
+  }
+  .introText2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .lightText {
+    color: #797585;
+    font-size: 4.267vw;
+    font-weight: 400;
+    line-height: 6.4vw;
+    text-align: center;
+    width: 73.867vw;
+  }
+
+  .introActionContainer {
+    margin-top: 10.667vw;
+    width: 100%;
+
+    > a {
+      margin-right: 5%;
+    }
+  }
+
+  .introActionImg {
+    width: 40vw;
+  }
+
+  .socialMedia {
+    margin-top: 10.667vw;
+
+    gap: 6.4vw;
+  }
+
+  .peopleContainer {
+    padding: 3.2vw;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2vw;
+    border-radius: 3.2vw;
+    background-color: #e7f9fc;
+
+    > p {
+      font-size: 3.733vw;
+      font-weight: 500;
+      line-height: 5.6vw;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #131313;
+    }
+
+    > img {
+      width: 21.333vw;
+      height: 8.533vw;
+    }
+  }
+
+  .socialMediaContainer {
+    width: 50%;
+    height: auto;
+    padding: 3.2vw;
+    background-color: #eceefe;
+    border-radius: 3.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.2vw;
+
+    > p {
+      color: #131313;
+      font-size: 3.733vw;
+      font-weight: 500;
+      line-height: 5.6vw;
+      text-align: center;
+    }
+  }
+
+  #socialMediaLinks {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3.8vw;
+
+    > img {
+      margin: 0;
+      width: 5.333vw;
+      height: 5.333vw;
+      cursor: pointer;
+    }
+  }
+}

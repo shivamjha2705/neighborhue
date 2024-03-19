@@ -1,0 +1,317 @@
+.navBar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9.722vw;
+
+  /* glassmorphism */
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: sticky;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  overflow: hidden;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.navLogo {
+  width: 12vw;
+}
+
+.navLinkConatiner {
+  width: 76.389vw;
+  padding-right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLink {
+  display: flex;
+  gap: 2.778vw;
+  margin-left: auto;
+  margin-right: 20px;
+
+  > a {
+    text-decoration: none;
+    color: #5418cf;
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.667vw;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  > a:hover {
+    color: #dd6745;
+    border-bottom: #5418cf 3px solid;
+  }
+}
+
+.registerSection {
+  display: flex;
+  align-items: center;
+  gap: 1.389vw;
+}
+
+.signInBtn {
+  border: none;
+  color: #5418cf;
+  background-color: transparent;
+
+  font-family: Inter;
+  font-size: 1.111vw;
+  font-weight: 600;
+  line-height: 1.667vw;
+}
+
+.registerBtn {
+  border: none;
+  color: #ffff;
+  padding: 0.833vw;
+  border-radius: 0.208vw;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 65, 23, 0.7988445378151261) 24%,
+    rgba(84, 24, 207, 0.8016456582633054) 100%
+  );
+  font-family: Inter;
+  font-size: 1.111vw;
+  font-weight: 600;
+  border-radius: 10px;
+  line-height: 1.667vw;
+}
+
+.menuBtn,
+.crossBtn {
+  width: 2.218vw;
+  height: 2.218vw;
+  display: none;
+}
+
+@media screen and (max-device-width: 500px) {
+  .navHiddenContainer {
+    display: none;
+  }
+  .navBar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 10px;
+    height: auto;
+    padding-top: 2.267vw;
+    overflow: unset;
+
+    > a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .navLogo {
+    width: 36vw;
+  }
+
+  .menuBtn {
+    display: block;
+    height: 8.533vw;
+    width: 8.533vw;
+  }
+
+  .crossBtn {
+    height: 6vw;
+    width: 6vw;
+    z-index: 1;
+  }
+
+  .navLinkConatiner {
+    position: absolute;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 12.8vw;
+    background-color: white;
+    left: 0%;
+    top: 0%;
+    height: fit-content;
+    width: 100%;
+    padding: 10.667vw 4.267vw;
+    z-index: 1;
+    box-shadow: 0px 2.667vw 6.4vw #888888;
+  }
+
+  .navLink {
+    flex-direction: column;
+    align-items: center;
+    display: contents;
+    gap: 8.533vw;
+    height: unset;
+
+    > a {
+      color: #051052;
+      font-size: 3.933vw;
+      font-weight: 600;
+      line-height: 10.4vw;
+      text-align: center;
+    }
+  }
+
+  .registerSection {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .signInBtn {
+    border: none;
+    color: #051052;
+    padding: 3.2vw;
+    font-size: 3.933vw;
+    font-weight: 600;
+    line-height: 10.4vw;
+    text-align: center;
+  }
+
+  .registerBtn {
+    border: none;
+    color: #ffff;
+    padding: 1vw 2vw;
+    border-radius: 2.133vw;
+    background: linear-gradient(
+      90deg,
+      rgba(212, 65, 23, 0.7988445378151261) 24%,
+      rgba(84, 24, 207, 0.8016456582633054) 100%
+    );
+    font-size: 3.933vw;
+    font-weight: 600;
+    line-height: 10.4vw;
+    text-align: center;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .navHiddenContainer {
+    display: none;
+  }
+
+  .navBar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 10px;
+    height: auto;
+    padding-top: 1.267vw;
+    overflow: unset;
+
+    > a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .navLogo {
+    width: 20vw;
+  }
+
+  .menuBtn {
+    display: block;
+    height: 5.533vw;
+    width: 5.533vw;
+  }
+
+  .crossBtn {
+    height: 4vw;
+    width: 4vw;
+    z-index: 1;
+  }
+
+  .navLinkConatiner {
+    position: absolute;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 6.25vw;
+    background-color: white;
+    left: 0%;
+    top: 0%;
+    height: fit-content;
+    width: 100%;
+    padding: 5.208vw 2.083vw;
+    z-index: 1;
+    box-shadow: 0px 1.302vw 3.125vw #888888;
+  }
+
+  .navLink {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.604vw;
+    height: unset;
+    display: contents;
+
+    > a {
+      color: #051052;
+      font-size: 2.933vw;
+      font-weight: 600;
+      line-height: 6.4vw;
+      text-align: center;
+    }
+  }
+
+  .registerSection {
+    width: 100%;
+    justify-content: center;
+    gap: 5.208vw;
+  }
+
+  .signInBtn {
+    border: none;
+    color: #051052;
+    padding: 1.563vw;
+    font-size: 2.933vw;
+    font-weight: 600;
+    line-height: 6.4vw;
+    text-align: center;
+  }
+
+  .registerBtn {
+    border: none;
+    color: #ffff;
+    padding: 0.5vw 1.563vw;
+    border-radius: 1.042vw;
+    background: linear-gradient(
+      90deg,
+      rgba(212, 65, 23, 0.7988445378151261) 24%,
+      rgba(84, 24, 207, 0.8016456582633054) 100%
+    );
+    font-size: 2.933vw;
+    font-weight: 600;
+    line-height: 6.4vw;
+    text-align: center;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+.navbar-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user-info p {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.navbar-user-info .profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}

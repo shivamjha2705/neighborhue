@@ -1,0 +1,152 @@
+/* *{
+    border: 1px solid red;
+} */
+
+.commentsContainer{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentsHeading{
+    font-weight: 600;
+    align-self: center;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+    position: relative;
+
+
+    > img{
+        position: absolute;
+        top: 60%;
+        left: 45%;
+        z-index: -1;
+        width: 13vw;
+    }
+}
+
+.sliderParent{
+    position: relative;
+}
+
+.leftFade{
+    position: absolute;
+    height: -webkit-fill-available;
+    width: 20vh;
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    z-index: 1;
+}
+
+.rightFade{
+    position: absolute;
+    height: -webkit-fill-available;
+    right: 0;
+    width: 20vh;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    z-index: 1;
+}
+
+.sliderContainer1, .sliderContainer2{
+    overflow: hidden;
+}
+
+.commentSlider1, .commentSlider2{
+    padding: 2vh 0;
+    /* overflow: hidden; */
+    display: inline-flex;
+}
+
+.commentSlider1:hover .commentHolder1{
+    animation-play-state: paused;
+
+}
+.commentSlider2:hover .commentHolder2{
+    animation-play-state: paused;
+}
+
+.commentHolder1, .commentHolder2{
+    display: flex;
+    width: max-content;    
+    margin: 1vh;
+}
+
+.commentHolder1{
+    animation: 50s slide1 infinite linear;
+}
+.commentHolder2{
+    animation: 50s slide1 infinite linear reverse;
+}
+
+.commentCardContainer{
+    height: 32vh;
+    width: 60vh;
+    margin: 0 1vw;
+    display: flex;
+    border: 1px solid rgba(110, 106, 106, 0.855);
+    border-radius: 15px;
+    padding: 2vh 3vh;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+}
+
+.comment{
+    font-size: 1vw;
+    font-weight: 600;
+    color: rgb(71, 69, 69);
+    line-height: 3vh;
+    max-height: 20vh;
+    width: auto;
+}
+
+.commenter{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vh;
+    font-size: 1.2vw;
+    font-weight: 600;
+
+    >img{
+        border-radius: 100%;
+        width: 7vh;
+    }
+}
+
+.commentCardContainer:hover{
+    /* transform: translateZ(20%); */
+    transform: scale(1.1);
+}
+
+@keyframes slide1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@media screen and (max-width: 500px){
+    .commentCardContainer{
+        width: 30vh;
+    }
+    .comment{
+        font-size: 3vw;
+    }
+    .commenter p{
+        font-size: x-small;
+    }
+
+}

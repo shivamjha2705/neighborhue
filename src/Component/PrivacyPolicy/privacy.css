@@ -1,0 +1,79 @@
+.privacy_main {
+  margin: 30px;
+  text-align: justify;
+
+  > span {
+    color: rgb(106, 106, 106);
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  > .summary h1,
+  .table_of_contents h1,
+  .info_collection h1,
+  .process_info h1,
+  .personal_info h1,
+  .cookies h1,
+  .social_logins h1,
+  .info_transfered h1,
+  .info_keep h1,
+  .info_from_minors h1,
+  .privacy_rights h1,
+  .dont_track h1,
+  .update_to_notice h1 {
+    text-align: left;
+  }
+
+  > .summary,
+  .table_of_contents,
+  .info_collection,
+  .process_info,
+  .personal_info,
+  .cookies,
+  .social_logins,
+  .info_transfered,
+  .info_keep,
+  .info_from_minors,
+  .privacy_rights,
+  .dont_track,
+  .update_to_notice {
+    margin-top: 20px;
+  }
+  > .table_of_contents ol li {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: blue;
+  }
+  .summary p span {
+    color: blue;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .privacy_main {
+    margin: 11px;
+    text-align: start;
+
+    > .summary h1,
+    .table_of_contents h1,
+    .info_collection h1,
+    .process_info h1,
+    .personal_info h1,
+    .cookies h1,
+    .social_logins h1,
+    .info_transfered h1,
+    .info_keep h1,
+    .info_from_minors h1,
+    .privacy_rights h1,
+    .dont_track h1,
+    .update_to_notice h1 {
+      font-size: 1.5em;
+      text-align: left;
+    }
+  }
+}
+@media (min-width: 1441px) {
+  .privacy_main {
+    margin: 80px 300px 30px 50px;
+  }
+}

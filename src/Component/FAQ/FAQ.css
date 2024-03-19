@@ -1,0 +1,318 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.faqNeoWraper {
+    background-color: #02061D;
+    padding: 5%;
+}
+
+.faqConatiner {
+    display: flex;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.faqLeftContainer {
+    width: 50%;
+}
+
+.faqRightContainer {
+    width: 50%;
+}
+
+.faqHeading {
+    color: white;
+    margin-bottom: 5%;
+
+    /* font-family: Poppins; */
+    font-size: 3.881vw;
+    font-weight: 600;
+    line-height: 5.821vw;
+}
+
+.needHelp {
+    position: absolute;
+    color: white;
+    top: 13.167vw;
+    width: 40.176vw;
+    display: flex;
+    /* font-family: Poppins; */
+    font-size: 1.386vw;
+    font-weight: 500;
+    line-height: 2.079vw;
+
+    /* >img{
+        height: 1.663vw;
+        width: 1.663vw;
+    } */
+
+    >a {
+        font-size: 1.386vw;
+        font-weight: 500;
+        line-height: 2.079vw;
+        color: white;
+        text-decoration: underline;
+        /* display: inline; */
+    }
+}
+
+.faqSeeMoreBtn {
+    border-radius: 0.347vw;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #003B84;
+    width: 24%;
+    height: 8%;
+    padding: 2%;
+
+    /* font-family: Inter; */
+    font-size: 1.109vw;
+    font-weight: 600;
+    line-height: 1.663vw;
+
+    display: none;
+}
+
+.faqBtnText {
+    text-decoration: none;
+}
+
+.faqQuestionContainer {
+    background-color: #040C39;
+    border-radius: 1.040vw;
+    color: white;
+    margin-bottom: 3%;
+    padding: 5%;
+}
+
+.faqQuestionTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: Inter; */
+    font-size: 1.386vw;
+    font-weight: 600;
+    line-height: calc(1.940vw + 4px);
+
+    >p {
+        width: 3.326vw;
+        height: 3.326vw;
+        background-color: #003B84;
+        padding: 0.776vw;
+        font-size: 2.426vw;
+        border-radius: 50%;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0.970vw;
+        cursor: pointer;
+    }
+}
+
+.faqQuestionBtn {
+    margin-left: 2%;
+}
+
+.faqQuestionAnswer {
+    color: rgba(255, 255, 255);
+    padding-top: 3%;
+    /* display: non; */
+
+    /* font-family: Inter; */
+    font-size: 1.109vw;
+    font-weight: 300;
+    /* line-height: 1.663vw; */
+    line-height: calc(1.525vw + 3px);
+}
+
+/* 
+.speakToNeoContainer {
+} */
+
+/* .speakToNeoLeft {
+    width: 28%;
+    height: 75%;
+    align-self: self-end;
+} */
+
+.speakToNeoCenter {
+    background: linear-gradient(90deg, #DD6745 24%, rgba(84,24,207,0.8016456582633054) 100%);
+    /* background-image: url('../../Assets/speakToNeoBG.svg'); */
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    border-radius: 2.079vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 3%;
+}
+
+.neoLogo {
+    margin-right: 5%;
+    width: 11.989vw;
+    height: 11.989vw;
+
+}
+
+.neoIntro {
+    /* margin: 0 5%; */
+    width: 21.483vw;
+
+    >h2 {
+        margin-bottom: 2%;
+        color: rgba(255, 255, 255, 0.80);
+
+        /* font-family: Poppins; */
+        font-size: 3.881vw;
+        font-weight: 600;
+        line-height: 5.821vw;
+    }
+
+    >p {
+        margin-top: 2%;
+        margin-bottom: 4%;
+        color: rgba(255, 255, 255, 0.86);
+
+        /* font-family: Inter; */
+        font-size: 1.386vw;
+        font-weight: 500;
+        line-height: 2.079vw;
+
+    }
+
+    
+}
+
+/* 
+.speakToNeoRight {
+    width: 28%;
+} */
+
+
+
+@media screen and (max-device-width: 500px) {
+    .faqNeoWraper {
+        padding: 8.533vw 4.267vw;
+    }
+
+    .speakToNeoCenter {
+        /* display: none; */
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+
+        /* height: 216px; */
+
+        >img {
+            height: 12.8vw;
+            width: 12.8vw;
+        }
+
+    }
+
+    .neoIntro {
+        width: 61.067vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+        >h2 {
+            /* font-family: Poppins; */
+            font-size: 6.933vw;
+            font-weight: 600;
+            line-height: calc(9.333vw + 4px);
+        }
+
+        >p {
+            /* font-family: Poppins; */
+            font-size: 3.733vw;
+            font-weight: 500;
+            line-height: calc(4.533vw + 4px);
+        }
+        
+    }
+
+    .faqConatiner {
+        flex-direction: column;
+    }
+
+    .faqLeftContainer {
+        width: 100%;
+    }
+
+    .faqHeading {
+        /* font-family: Poppins; */
+        font-size: 6.933vw;
+        font-weight: 600;
+        line-height: calc(9.333vw + 4px);
+        text-align: center;
+    }
+
+    .faqQuestionContainer {
+        padding: 4.267vw 5.333vw;
+
+    }
+
+    .faqQuestionTitle {
+        /* font-family: Poppins; */
+        font-size: 4.267vw;
+        font-weight: 500;
+        line-height: calc(5.333vw + 4px);
+        text-align: left;
+        gap: calc(5.333vw + 4px);
+
+        >p {
+            padding: 6%;
+            /* width: 32px;
+            height: 32px; */
+            align-self: flex-start;
+            font-size: 9vw;
+            font-weight: 300;
+        }
+    }
+
+    .faqRightContainer {
+        width: 100%;
+    }
+
+    .needHelp {
+        position: static;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5.333vw;
+        /* font-family: Poppins; */
+        font-size: 3.733vw;
+        font-weight: 500;
+        line-height: calc(4.533vw + 2px);
+
+        >img{
+            width: 5.333vw;
+            height: 5.333vw;
+        }
+        
+        >a {
+            font-size: 3.733vw;
+            font-weight: 500;
+            line-height: calc(4.533vw + 2px);
+        }
+    }
+
+    .faqQuestionAnswer {
+        /* font-family: Poppins; */
+        font-size: 3.733vw;
+        font-weight: 400;
+        line-height: calc(4.533vw + 4px);
+        text-align: left;
+
+    }
+}

@@ -1,0 +1,130 @@
+.shareSectionContainer {
+  background-image: url("../../Assets/sharebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0vh;
+  padding: 5% 0;
+  gap: 5vh;
+}
+
+.shareHeader {
+  color: #051052;
+  font-size: 6vw;
+  font-weight: 600;
+  font-family: "Abhaya Libre";
+  /* letter-spacing: 0.4vmin; */
+}
+
+.deepBlue {
+  color: #003b84;
+}
+
+.shareData {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 1.4vw;
+  width: 50%;
+  text-align: center;
+}
+
+.shareActionContainer {
+  display: flex;
+  gap: 2vw;
+  margin-top: 2vw;
+
+  > button {
+    padding: 1.2vw;
+    min-width: 12vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.2vw;
+  }
+}
+
+.shareLink {
+  color: white;
+  background-color: #008fbe;
+  border: none;
+  /* width: 1vw; */
+  /* font-size: 1.4vw; */
+}
+
+.copyLink {
+  color: #008fbe;
+  border: #008fbe 2px solid;
+  /* font-size: 1.4vw; */
+}
+
+.shareLogo {
+  width: 1.5vw;
+}
+
+@media screen and (max-device-width: 500px) {
+  .shareSectionContainer {
+    background-image: url("../../Assets/sharebgM.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 6.4vw 13.867vw 42.933vw 13.867vw;
+    gap: 0;
+  }
+
+  .shareHeader {
+    font-family: Abhaya Libre;
+    font-size: 9.6vw;
+    font-weight: 700;
+    line-height: 10.667vw;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .shareData {
+    margin-top: 2.133vw;
+    color: #4f4f4f;
+    width: 100%;
+    /* font-family: Poppins; */
+    font-size: 3.2vw;
+    font-weight: 400;
+    line-height: 4.8vw;
+  }
+
+  .shareActionContainer {
+    margin-top: 12.8vw;
+    gap: 5.333vw;
+
+    > button {
+      padding: 2.667vw 3.733vw;
+      min-width: unset;
+      gap: 1.067vw;
+      /* font-family: Inter; */
+      font-size: 3.733vw;
+      font-weight: 600;
+      line-height: 5.6vw;
+    }
+  }
+
+  .copyLink {
+    border: #008fbe 0.4vw solid;
+  }
+  .shareSectionContainer p {
+    color: #ffff;
+  }
+
+  .shareLogo {
+    width: 5.333vw;
+    height: 5.333vw;
+  }
+  .comingBtn i {
+    display: none;
+  }
+}

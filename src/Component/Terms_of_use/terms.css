@@ -1,0 +1,66 @@
+.terms_main {
+  margin: 30px;
+  text-align: justify;
+
+  > span {
+    color: rgb(106, 106, 106);
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  > .agreement {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  > .table_of_contents,
+  .our_services,
+  .intellectual,
+  .intellectual h2,
+  .user_representation,
+  .user_registration,
+  .products,
+  .purchase,
+  .subscription,
+  .refund,
+  .software,
+  .prohibited,
+  .user_gen_contribution,
+  .contribution_license,
+  .social_media,
+  .advertisers,
+  .service_management,
+  .privacy_policy,
+  .term_termination,
+  .modification,
+  .governing_law,
+  .dispute,
+  .corrections,
+  .disclaimer,
+  .limitations,
+  .indemnification,
+  .user_data,
+  .electronics,
+  .california,
+  .miscellaneous {
+    margin-top: 20px;
+  }
+  > .table_of_contents ol li {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .intellectual p span {
+    color: blue;
+    font-weight: 700;
+  }
+}
+@media (max-width: 500px) {
+  .terms_main {
+    margin: 11px;
+  }
+}
+@media (min-width: 1441px) {
+  .terms_main {
+    margin: 80px 300px 30px 50px;
+  }
+}

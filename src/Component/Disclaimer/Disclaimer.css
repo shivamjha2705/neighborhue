@@ -1,0 +1,113 @@
+/* *{
+    border: 1px solid red;
+} */
+
+.disclaimerContainer {
+    margin: 5%;
+    margin-bottom: 10%;
+    background-image: url('../../Assets/disclaimerBg.webp');
+    /* background-color: #41aadb; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 5vw 3vw;
+    gap: 3%;
+    border-radius: 15px;
+
+    min-height: 80vh;
+}
+
+.disclaimerLeft {
+    width: 50%;
+}
+
+.disclaimerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.disclaimer1,
+.disclaimer2 {
+    display: flex;
+    gap: 3%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.disclaimerVector {
+    margin-top: 1vh;
+    height: 1.2vw;
+}
+
+.disclaimer {
+    font-size: 1.3vw;
+    font-weight: 600;
+    line-height: 2vmax;
+    word-spacing: 0.1vw;
+}
+
+.disclaimerAction {
+    display: block;
+    margin-top: 4%;
+    font-size: 1.8vw;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media screen and (max-device-width:500px) {
+    .disclaimerContainer {
+        margin: 0;
+        background-image: url('../../Assets/disclaimerBgMobile.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        padding: 5.333vw 7.467vw;
+        gap: 8.533vw;
+        border-radius: 0;
+        min-height: unset;
+
+        margin: 26.667vw 0;
+    }
+
+    .disclaimerLeft {
+        width: 50.667vw;
+    }
+
+    .disclaimerRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        gap: 4.267vw;
+    }
+
+    .disclaimerVector {
+        margin-top: 1.067vw;
+        margin-right: 0.533vw;
+        height: 5.333vw;
+        width: 5.333vw;
+    }
+
+    .disclaimer {
+        word-spacing: unset;
+        color: #FFFFFFE5;
+        /* font-family: Inter; */
+        font-size: 3.733vw;
+        font-weight: 500;
+        line-height: 5.6vw;
+    }
+    
+    .disclaimerAction {
+        margin-top:unset;        
+        color: white;
+        /* font-family: Inter; */
+        font-size: 4.267vw;
+        font-weight: 600;
+        line-height: 6.4vw;
+    }
+}

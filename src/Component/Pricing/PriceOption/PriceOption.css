@@ -1,0 +1,610 @@
+.planContainer {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.planHeading {
+  font-size: 3.881vw;
+  margin: 1%;
+}
+.token {
+  text-align: center;
+  color: grey;
+  font-weight: 600;
+  margin: 1%;
+  font-size: 1.386vw;
+}
+.tokenRem {
+  color: black;
+}
+.planCardContainer {
+  margin-top: 5%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  position: relative;
+}
+.planCard {
+  width: 100%;
+  height: 57.141vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.hr {
+  margin: 7% 0;
+  background-color: #bdbdbd6d;
+}
+.basePlanContainer {
+  background-image: url("../../../Assets/basicCard.webp");
+  background-size: 100% 100%;
+}
+.premiumPlanContainer {
+  background-size: 100% 100%;
+  background-image: url("../../../Assets/premiumCard.webp");
+}
+.basePlanHeader {
+  margin-top: 12%;
+  display: flex;
+  gap: 1%;
+  height: 5vw;
+}
+.basePlanHeading {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cardHeading {
+  font-size: 1.6vw;
+}
+.cardFeature {
+  font-size: 1.2vw;
+  text-align: left;
+}
+.basicPlanContainer {
+  margin: 7% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4vw;
+}
+.radioBtn {
+  height: 2vw;
+  width: 2vw;
+  vertical-align: middle;
+}
+.basicPlanOptions {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+
+  > label {
+    flex-grow: 3;
+    display: flex;
+    color: #808080;
+    font-size: 1.4vw;
+    font-weight: 500;
+  }
+}
+.credit {
+  width: 45%;
+}
+.gstLine {
+  font-size: 1.109vw;
+  font-weight: 500;
+  text-align: center;
+  color: grey;
+  font-style: italic;
+}
+.purchaseBtn {
+  width: 100%;
+  padding: 3% 30%;
+  border: none;
+  font-size: 1.4vw;
+  font-weight: 500;
+  border-radius: 1.386vw;
+  background-image: linear-gradient(to right, #008fbe, #0357f8);
+  color: white;
+}
+.serviceContainer {
+  height: 4.1vw;
+
+  > img {
+    height: 2.079vw;
+    width: 2.079vw;
+  }
+}
+.premiunCardHeading {
+  color: white;
+}
+.premiumCardService {
+  color: rgba(255, 255, 255, 0.742);
+}
+.serviceNumber {
+  color: white;
+}
+.basicPriceContainer {
+  flex-grow: 2;
+  color: black;
+
+  > h2 {
+    font-size: 2.495vw;
+    text-align: right;
+  }
+  > p {
+    font-size: 1.247vw;
+    text-align: right;
+    color: rgba(75, 74, 74, 0.742);
+  }
+  /* > p > span {
+    font-size: 1vw;
+  } */
+}
+
+.premiumPriceContainer {
+  flex-grow: 2;
+  color: white;
+
+  > h2 {
+    font-size: 2.495vw;
+    text-align: right;
+  }
+
+  > p {
+    font-size: 1.247vw;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.742);
+  }
+}
+
+.service {
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+.basic_service {
+  color: black;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+.togglePremiumPlanContainer {
+  margin-top: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+  height: 3vw;
+  gap: 3%;
+}
+
+.toggleBtn {
+  width: 5vw;
+  height: 2.6vw;
+  border: 2px solid white;
+  border-radius: 3vw;
+  display: flex;
+  align-items: center;
+}
+
+.yearly {
+  translate: 2.218vw;
+}
+
+.toggleDisk {
+  margin: 0 5%;
+  height: 2vw;
+  width: 2vw;
+  /* border: none; */
+  background-color: #d2bfff;
+  border-radius: 50%;
+}
+
+.monthlyPlan {
+  width: 12vw;
+  text-align: end;
+}
+
+.yearlyPlan {
+  display: flex;
+  gap: 6%;
+  width: 12vw;
+}
+
+.discount {
+  color: #00e3b9;
+  font-weight: 500;
+  font-size: 1vw;
+  align-self: center;
+}
+
+.recomendedBar {
+  background-image: url("../../../Assets/premiumSmallBg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: -4%;
+  left: 64%;
+  width: 19.8vw;
+  height: 5.8vw;
+  text-align: center;
+  font-size: 1.6vw;
+  font-weight: 600;
+  color: #051052;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-device-width: 500px) {
+  .planContainer {
+    padding: 0px 4.267vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .planHeading {
+    margin-top: 16vw;
+    /* font-family: Poppins; */
+    font-size: 9.6vw;
+    font-weight: 600;
+    line-height: 14.4vw;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .token {
+    color: grey;
+    margin-top: 2.133vw;
+
+    /* font-family: Inter; */
+    font-size: 4.267vw;
+    font-weight: 600;
+    line-height: 6.4vw;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .planCardContainer {
+    margin-top: 10.667vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: unset;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .planCard {
+    width: 100%;
+    height: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 4.267vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 17.333vw;
+  }
+
+  .hr {
+    margin: 5.333vw 0;
+    background-color: #bdbdbd6d;
+  }
+
+  .basePlanContainer {
+    background-image: url("../../../Assets/basicBgMobile.webp");
+    background-size: 100% 100%;
+  }
+
+  .premiumPlanContainer {
+    background-image: url("../../../Assets/premiumBgMobile.webp");
+    background-size: 100% 100%;
+    padding-bottom: 4.267vw;
+    padding-top: 22.4vw;
+    margin-top: 16vw;
+  }
+
+  .basePlanHeader {
+    margin-top: unset;
+    gap: 2.133vw;
+    height: unset;
+    display: flex;
+
+    > img {
+      width: 14.4vw;
+      height: 13.867vw;
+    }
+  }
+
+  .basePlanHeading {
+    width: 37.333vw;
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .cardHeading {
+    margin-top: 0;
+    /* font-family: Poppins; */
+    font-size: 4.8vw;
+    font-weight: 600;
+    line-height: 7.467vw;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cardFeature {
+    /* font-family: Poppins; */
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 6.133vw;
+    text-align: left;
+    color: grey;
+    margin-top: unset;
+  }
+
+  .basicPlanContainer {
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+  }
+
+  .radioBtn {
+    height: 6.933vw;
+    width: 6.933vw;
+    vertical-align: middle;
+  }
+
+  .basicPlanOptions {
+    display: flex;
+    align-items: center;
+    gap: 5.333vw;
+
+    > label {
+      flex-grow: 1;
+      display: flex;
+      color: #808080;
+      /* font-family: Poppins; */
+      font-size: 4.267vw;
+      font-weight: 500;
+      line-height: 6.933vw;
+      text-align: left;
+    }
+  }
+
+  .credit {
+    width: 60%;
+  }
+
+  .gstLine {
+    color: grey;
+    margin-top: 8.533vw;
+    /* font-family: Poppins; */
+    font-size: 3.733vw;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 5.6vw;
+    text-align: left;
+  }
+
+  .purchaseBtn {
+    width: 100%;
+    padding: 3.733vw 8vw;
+    border: none;
+    border-radius: 3.2vw;
+    background-image: linear-gradient(to right, #008fbe, #0357f8);
+    color: white;
+    margin-top: 4.8vw;
+
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.4vw;
+  }
+
+  .premiunCardHeading {
+    color: white;
+  }
+
+  .premiumCardService {
+    color: rgba(255, 255, 255, 0.742);
+  }
+
+  .serviceContainer {
+    height: unset;
+
+    > img {
+      height: 6.933vw;
+      width: 6.933vw;
+    }
+  }
+
+  .serviceNumber {
+    color: white;
+  }
+
+  .basicPriceContainer {
+    flex-grow: 0;
+    color: black;
+    width: 24vw;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+
+    > h2 {
+      font-size: 5.333vw;
+      font-weight: 600;
+      line-height: 8vw;
+      text-align: right;
+    }
+    > p {
+      font-size: 4vw;
+      font-weight: 500;
+      line-height: 6.133vw;
+      text-align: right;
+      color: rgba(75, 74, 74, 0.742);
+    }
+    /* > p > span {
+      font-size: 1.7vw;
+    } */
+  }
+
+  .premiumPriceContainer {
+    flex-grow: 0;
+    color: white;
+    width: 24vw;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+
+    > h2 {
+      /* font-family: Poppins; */
+      font-size: 5.333vw;
+      font-weight: 600;
+      line-height: 8vw;
+      text-align: right;
+    }
+
+    > p {
+      /* font-family: Poppins; */
+      font-size: 4vw;
+      font-weight: 500;
+      line-height: 6.133vw;
+      text-align: right;
+      color: rgba(255, 255, 255, 0.742);
+    }
+  }
+
+  #premiumServiceContainer {
+    gap: 7.467vw;
+  }
+
+  .service {
+    color: white;
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.933vw;
+    text-align: left;
+  }
+  .basic_service {
+    color: black;
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.933vw;
+    text-align: left;
+  }
+
+  /* .fadeService {
+    color: #bdbdbd;
+  } */
+
+  .premiumPurchaseBtn {
+    background-image: linear-gradient(to right, #00bac2, #0357f8);
+  }
+
+  .togglePremiumPlanContainer {
+    margin-top: 7.467vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: unset;
+    gap: 4.267vw;
+
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.933vw;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .toggleBtn {
+    width: 12.4vw;
+    height: 6.4vw;
+    border: 0.533vw solid white;
+    border-radius: 9.067vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+  }
+
+  .toggleDisk {
+    margin: 0 4%;
+    height: 4.8vw;
+    width: 4.8vw;
+  }
+
+  .yearly {
+    translate: 5.7vw;
+  }
+
+  .monthlyPlan {
+    width: unset;
+    text-align: end;
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.933vw;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .yearlyPlan {
+    display: unset;
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.933vw;
+    letter-spacing: 0em;
+    text-align: center;
+    width: unset;
+  }
+
+  .discount {
+    color: #00e3b9;
+
+    padding-left: 2.667vw;
+    /* font-family: Poppins; */
+    font-size: 3.733vw;
+    font-weight: 500;
+    line-height: 6.133vw;
+    text-align: center;
+  }
+
+  .recomendedBar {
+    background-image: url("../../../Assets/premiumSmallBg.webp");
+    background-size: auto;
+    position: unset;
+    top: unset;
+    left: unset;
+    width: unset;
+    height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.933vw;
+    padding: 4.267vw 5.333vw;
+    position: absolute;
+    bottom: 45.4%;
+
+    border-radius: 5.333vw;
+    border: 0.267vw solid rgba(0, 0, 0, 0.202);
+  }
+}

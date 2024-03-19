@@ -1,0 +1,38 @@
+.purchaseBtn {
+  width: 100%;
+  padding: 3% 30%;
+  border: none;
+  font-size: 1.4vw;
+  font-weight: 500;
+  border-radius: 1.386vw;
+  background-image: linear-gradient(to right, #008fbe, #0357f8);
+  color: white;
+}
+
+.PaymentError {
+  color: red;
+  margin-top: 10px;
+}
+.premiumPurchaseBtn {
+  background-image: linear-gradient(to right, #00bac2, #0357f8);
+}
+
+@media screen and (max-device-width: 500px) {
+  .purchaseBtn {
+    width: 100%;
+    padding: 3.733vw 8vw;
+    border: none;
+    border-radius: 3.2vw;
+    background-image: linear-gradient(to right, #008fbe, #0357f8);
+    color: white;
+    margin-top: 4.8vw;
+    /* font-family: Poppins; */
+    font-size: 4.267vw;
+    font-weight: 500;
+    line-height: 6.4vw;
+  }
+  .premiumPurchaseBtn {
+    background-image: linear-gradient(to right, #00bac2, #0357f8);
+  }
+}
+  
